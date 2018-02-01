@@ -26,8 +26,6 @@ public class Main {
 		if (f == 0 || f == 1){
 			return BigInteger.ONE;
 		}
-		BigInteger f1 = BigInteger.ZERO;
-		BigInteger f2 = BigInteger.ONE;
 		for (int i = 0; i <= f; i++){
 			BigInteger f3 = f1.add(f2);
 			f1 = f2;

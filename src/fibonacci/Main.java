@@ -23,9 +23,8 @@ public class Main {
 	
 	// Tail recursion that doesn't use memmory and can give out big numbers in little time.
 	public static BigInteger fibonacci(int f){
-		if (f == 0 || f == 1){
-			return BigInteger.ONE;
-		}
+		BigInteger f1 = BigInteger.ZERO;
+		BigInteger f2 = BigInteger.ONE;
 		for (int i = 0; i <= f; i++){
 			BigInteger f3 = f1.add(f2);
 			f1 = f2;
